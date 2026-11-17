@@ -78,7 +78,6 @@ function EnvelopeScene({ opening, onOpen, reduceMotion }) {
       </motion.div>
       <p className="overline">Till dig, i juletid</p>
       <h1 className="intro-title">En liten julhälsning</h1>
-      <p className="intro-subtitle">Ett litet rim har hittat fram. Vill du se vad det står?</p>
 
       <button
         className="envelope-button"
@@ -278,7 +277,7 @@ function GiftReveal({ giftOpen, onOpen, reduceMotion }) {
           <span className="gift-bow gift-bow-left" />
           <span className="gift-bow gift-bow-right" />
         </span>
-        <span className="gift-instruction">{giftOpen ? "Öppnad!" : "Tryck på paketet"}</span>
+        <span className="gift-instruction">{giftOpen ? "" : "Tryck på paketet"}</span>
       </button>
 
       <AnimatePresence>
@@ -292,7 +291,7 @@ function GiftReveal({ giftOpen, onOpen, reduceMotion }) {
             <SparkleBurst reduceMotion={reduceMotion} />
             <div className="surprise-star" aria-hidden="true">✦</div>
             <p>{ending}</p>
-            <span>God jul &amp; gott nytt år ♡</span>
+            <span>God jul &amp; gott nytt år!</span>
           </motion.div>
         )}
       </AnimatePresence>
@@ -350,10 +349,7 @@ function LetterScene({ skip, onSkip, poemDone, onComplete, giftOpen, onGiftOpen,
       </div>
 
       <div className="letter-actions">
-        {!poemDone && (
-          <button type="button" onClick={onSkip} className="text-button">Visa hela rimmet</button>
-        )}
-        <button type="button" onClick={onReplay} className="text-button">↻ Börja om</button>
+
       </div>
     </motion.section>
   );
