@@ -3,11 +3,11 @@
 export const verses = [
   [
     "Du skickar små ledtrådar titt som tätt,",
-    "så att välja julklappar blev faktiskt rätt lätt.",
+    "så att välja julklapp blev faktiskt rätt lätt.",
   ],
   [
-    "Två små överraskningar, utvalda med flit,",
-    "så tomten fick kämpa för att få dem hit.",
+    "Det som väntar här är valt med flit,",
+    "så tomten fick kämpa för att få det hit.",
   ],
   [
     "Öppna och se vad du får,",
